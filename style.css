@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("GothamBlack.ttf") format("truetype");
+}
+
+* {
+    font-family: "Gotham";
+}
+
+body {
+    /*background-color: #FF8000;*/
+}
+
+.body {
+    /*text-align: center;*/
+    /*display: block;*/
+    padding: 5vh 5vw;
+    border: 10px dashed orange;
+}
+
+img {
+    /*border: black solid 10px;*/
+}
+
+.topnav {
+    display: flex;
+align-items: center; 
+    background-color: #000000;
+    overflow-x: auto;
+    /*white-space-collapse: collapse;*/
+    text-wrap-mode: nowrap;
+}
+
+.topnav a {
+    /*float: left;*/
+    /*display: block;*/
+    text-align: center;
+    background-color: #000000;
+    /*border: none;*/
+    font-size: 2vh;
+    padding: 1vh 3vw;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.topnav a:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.topnav a.active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.topnav img {
+    float: left;
+    height: 3vh;
+    /* left: 5%;
+    right: 5%; */
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+@media (max-width: 480px) and (orientation: portrait), (max-width: 900px) and (orientation: landscape) {
+    .topnav a {
+        /* color: green !important; */
+        font-size: 5vh;
+        padding: 1vh 3vw;
+    }
+}
+
+.nameplate {
+    display: flex;
+}
+
+.nameplate img {
+    width: 10vw;
+}
