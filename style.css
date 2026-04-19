@@ -17,6 +17,7 @@ body {
     /* display: flex; */
     padding: 5vh 5vw;
     border: 10px dashed orange;
+    overflow: auto;
 }
 
 img {
@@ -25,7 +26,9 @@ img {
 
 .topnav {
     display: flex;
-align-items: center; 
+    align-items: center;
+    position: sticky;
+    top: 0;
     background-color: #000000;
     overflow-x: auto;
     /*white-space-collapse: collapse;*/
@@ -50,8 +53,8 @@ align-items: center;
 }
 
 .topnav a.active {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #FA6900;
+    color: #FFFFFF;
 }
 
 .topnav img {
@@ -63,22 +66,14 @@ align-items: center;
     margin-right: 1vh;
 }
 
-@media (max-width: 480px) and (orientation: portrait), (max-width: 900px) and (orientation: landscape) {
-    .topnav a {
-        /* color: green !important; */
-        font-size: 5vh;
-        /* padding: 1vh 3vw; */
-    }
-}
-
 .nameplate {
     display: flex;
     align-items: center;
-    gap: 2vw;
+    gap: 1rem;
 }
 
 .nameplate img {
-    width: 15vw;
+    width: 10rem;
     object-fit: contain;
 }
 
@@ -88,4 +83,46 @@ align-items: center;
 
 .nameplate h2 {
     margin: 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (max-width: 480px) and (orientation: portrait), (max-width: 900px) and (orientation: landscape) {
+    .topnav a {
+        /* color: green !important; */
+        font-size: 5vh;
+        /* padding: 1vh 3vw; */
+    }
+
+    .topnav img {
+        height: 5vh;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    .nameplate {
+        font-size: 0.8rem;
+    }
+    
+    .nameplate img {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
 }
